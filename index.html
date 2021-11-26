@@ -1,17 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles/index.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English Random Word</title>
+  <link rel="stylesheet" href="./styles/index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <div class="wrapper">
-    <div class="box">
-      <p class="word">Hello</p>
-    </div>
+    <main>
+      <div class="box">
+        <p class="word" id="word">dearth</p>
+        <span class="pronunciaton" id="pronunciation">/de;th/</span>
+        <div class="example">
+          <p class="example__en" id="enExample">There was a dearth of reliable information on the subject</p>
+          <small class="example__vi blur" id="viExample">Có sự khan hiếm thông tin đáng tin cậy về chủ đề</small>
+        </div>
+      </div>
+    </main>
+    <nav>
+      <ul>
+        <li>English</li>
+        <li>Japanese</li>
+        <li>Korean</li>
+        <li>Chinese</li>
+      </ul>
+    </nav>
   </div>
+  <script src="./js/script.js"></script>
 </body>
+
 </html>
