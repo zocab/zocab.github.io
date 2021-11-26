@@ -6,32 +6,104 @@
 body, html {
   height: 100%;
   font-size: 10px;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .wrapper {
   position: relative;
+  display: flex;
+  flex-direction: column;
   height: 100%;
   background: url('https://www.designesia.com/themes/oleos/images/background/3.jpg') no-repeat;
   background-size: cover;
   background-position: 50% 50%;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 200px;
+  background: #ffffff7d;
+  backdrop-filter: blur(9px);
+  box-shadow: -1px 0 10px 3px #f0f0f0;
+}
+
+main {
+  position: relative;
+  flex: 1;
 }
 
 .box {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 500px;
   height: 300px;
+  padding: 10px 25px;
   background: #ffffff2b;
-  border-radius: 20px;
+  border-radius: 8px;
   backdrop-filter: blur(10px);
 }
 
 p.word {
+  width: 100%;
   color: #fff;
-  font-size: 3rem;
+  font-size: 5rem;
+  cursor: pointer;
+  text-align: center;
+  user-select: none;
+}
+
+.pronunciaton {
+  margin: 20px 0;
+  color: #fff;
+  font-family: arial;
+  font-size: 2em;
+  font-style: italic;
+  font-weight: 200;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+.example {
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+}
+
+.example__vi {
+  color: #bdbdbd;
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+  user-select: none;
+}
+
+.blur {
+  color: transparent;
+  text-shadow: 0 0 10px #000;
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 40px;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+li {
+  padding: 10px 10px;
+  color: #fff;
+  font-size: 2em;
+  text-shadow: 2px 1px 20px #f0f0f0;
+  cursor: pointer;
+}
+
+li + li {
+  margin-left: 20px;
 }
